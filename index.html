@@ -1,0 +1,70 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login og register</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <header>
+        <img src="logo.png" alt="GreenCode Logo" style="height: 80px; width: auto; vertical-align: middle; border-radius: 50px;">
+        <h1 style="display: inline; margin-left: 30px;">🌿 GreenCode Initiative 🌿</h1>
+        <nav>
+            <a href="hovedside.html" aria-label="Gå til Hjem">Hjem</a>
+            <a href="Om green programming.html" aria-label="Les mer om Green Programming">Om Green Programming</a>
+            <a href="toolkit.html" aria-label="Se Toolkit">Toolkit</a>
+            <a href="case-studies.html" aria-label="Se Case Studies">Case Studies</a>
+            <a href="kode-eksempler.html" aria-label="Se Kode Eksempler">Kode eksempler</a>
+            <a href="Nyheter.html" aria-label="Les våre nyheter">Nyheter</a>
+            <a href="Kontakt oss.html" aria-label="Kontakt oss">Kontakt oss</a>
+            <a href="index.html" aria-label="Logge inn">Logg inn</a>
+          
+        </nav>
+      </header>
+
+<main>
+    <div class="contenedor__todo">
+<!-- baksiden av loging/registering-->
+        <div class="caja__trasera">
+            <div class="caja__trasera-login">
+                <h3>Har du en konto?</h3>
+                <p> Logg inn for å sjekke</p>
+                <button id="btn__iniciar-secion"> Logg Inn</button>
+            </div>
+            <div class="caja__trasera-registering">
+                <h3>Har du ikke registrert?</h3>
+                <p> Opprette en ny konto </p>
+                <button id="btn__registering"> Registrerer</button>
+            </div>
+        </div>
+        <div class="contenedor__login-register">
+            <!-- Loging metode -->
+            <form action="" class="formulario__login">
+
+                <h2>Logg Inn</h2>
+                <input type="text" placeholder="E-post">
+                <input type="password" placeholder="Passord">
+                <button>Bekreft</button>
+
+            </form>
+            <!-- RegistreringsMetode-->
+            <form action="" class="formulario__register">
+                <h2>Registrering</h2>
+                <input type="text" placeholder="Fornavn og Etternavn">
+                <input type="text" placeholder="E-post">
+                <input type="text" placeholder="Brukernavn">
+                <input type="password" placeholder="Passord">
+                <button>Registrere</button>
+            </form>
+        </div>
+    </div>
+</main>
+
+<footer>
+    © 2025 GreenCode Initiative
+  </footer>
+
+
+<script src="script.js"> </script>
+</body>
+</html>

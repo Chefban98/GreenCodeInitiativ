@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GreenCode Initiative</title>
+  <link rel="stylesheet" href="stylesJesper.css">
+</head>
+<body>
+  <header>
+    <img src="logo.png" alt="GreenCode Logo" style="height: 80px; width: auto; vertical-align: middle; border-radius: 50px;" aria-label="GreenCode Initiative Logo">
+    <h1 style="display: inline; margin-left: 30px;">🌿 GreenCode Initiative 🌿</h1>
+    
+    <nav>
+      <a href="hovedside.html" aria-label="Gå til Hjem">Hjem</a>
+      <a href="Om green programming.html" aria-label="Les mer om Green Programming">Om Green Programming</a>
+      <a href="toolkit.html" aria-label="Se Toolkit">Toolkit</a>
+      <a href="case-studies.html" aria-label="Se Case Studies">Case Studies</a>
+      <a href="kode-eksempler.html" aria-label="Se Kode Eksempler">Kode eksempler</a>
+      <a href="Nyheter.html" aria-label="Les våre nyheter">Nyheter</a>
+      <a href="Kontakt oss.html" aria-label="Kontakt oss">Kontakt oss</a>
+      <a href="index.html" aria-label="Logge inn">Logg inn</a>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Kode Eksempler</h2>
+    <p>På denne siden viser vi frem noen praktiske eksempler på hvordan du kan implementere bærekraftige programmeringspraksiser i koden din. Eksemplene dekker områder som effektiv løkking, databehandling og hvordan du kan bruke teknikker som **lazy loading** for å gjøre nettsider mer energieffektive. Målet er å gi deg konkrete verktøy som du kan bruke for å redusere ressursforbruket i programvaren din, og på den måten bidra til en mer bærekraftig teknologiutvikling.</p>
+
+    <section>
+      <h2>Effektiv løkking</h2>
+      <p>Unngå unødvendige operasjoner i løkker for å spare prosessorkraft. Her er et eksempel på hvordan du kan forbedre løkken for å gjøre koden mer effektiv:</p>
+      <button onclick="vippEksempel('eksempel1')" aria-label="Vis eksempel for effektiv løkking">Vis eksempel</button>
+      <div id="eksempel1" class="eksempel skjult">
+        <pre><code class="language-python">
+Eksempel
+names = ["Anna", "Bob", "Cecilie", "David"]
+for i in range(len(names)):
+  print(names[i])
+
+Grønnere kode
+names = ["Anna", "Bob", "Cecilie", "David"]
+for name in names:
+  print(name)
+        </code></pre>
+      </div>
+
+      <h2>Databehandling</h2>
+      <p>Jobb med mindre datamengder der det er mulig for å bruke mindre minne. Ved å behandle dataene sekvensielt i stedet for å laste hele datasettet på en gang, kan du redusere minnebruken og forbedre ytelsen:</p>
+      <button onclick="vippEksempel('eksempel2')" aria-label="Vis eksempel for databehandling">Vis eksempel</button>
+      <div id="eksempel2" class="eksempel skjult">
+        <pre><code class="language-python">
+Eksempel
+data = load_big_dataset()
+filtered_data = [item for item in data if item.is_relevant()]
+process(filtered_data)
+
+Grønnere kode
+for item in stream_dataset():
+  if item.is_relevant():
+    process(item)
+        </code></pre>
+      </div>
+
+      <h2>Lazy loading</h2>
+      <p>Bruk **lazy loading** for å bare laste inn bilder når de faktisk skal vises på skjermen. Dette sparer både båndbredde og prosessorkraft:</p>
+      <button onclick="vippEksempel('eksempel3')" aria-label="Vis eksempel for lazy loading">Vis eksempel</button>
+      <div id="eksempel3" class="eksempel skjult">
+        <pre><code class="language-html">
+&lt; Uten lazy loading &gt;
+&lt;img src="stor-bilde.jpg" alt="Tungt bilde"&gt;
+
+&lt; Med lazy loading &gt;
+&lt;img src="stor-bilde.jpg" alt="Tungt bilde" loading="lazy"&gt;
+        </code></pre>
+      </div>
+    </section>
+
+    <script>
+      function vippEksempel(id) {
+        const element = document.getElementById(id);
+        element.classList.toggle("skjult");
+      }
+    </script>
+  </main>
+
+  <footer>
+    © 2025 GreenCode Initiative
+  </footer>
+</body>
+</html>
